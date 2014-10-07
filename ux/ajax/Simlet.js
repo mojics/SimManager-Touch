@@ -74,6 +74,18 @@ Ext.define('Ext.ux.ajax.Simlet', function () {
             return ret;
         },
 
+        doPost: function (ctx) {
+            return this.doGet.call(this,ctx);
+        },
+
+        doPut: function (ctx) {
+            return this.doGet.call(this,ctx);
+        },
+
+        doDelete: function (ctx) {
+            return this.doGet.call(this,ctx);
+        },
+
         doRedirect: function (ctx) {
             return false;
         },
